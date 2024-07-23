@@ -1,0 +1,80 @@
+/*  por defecto */
+body {
+    color: #000;
+    background-color: #fff;
+}
+
+.form-control {
+    color: #000;
+    background-color: #fff;
+}
+
+.btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+/* alto contraste */
+body.high-contrast {
+    color: #fff;
+    background-color: #000;
+}
+
+body.high-contrast .form-control {
+    color: #ff0; 
+    background-color: #000;
+    border-color: #ff0; 
+}
+
+body.high-contrast .form-control::placeholder {
+    color: #ff0; 
+}
+
+body.high-contrast .btn-outline-primary {
+    border-color: #ff0;
+    color: #ff0;
+}
+
+body.high-contrast .btn-outline-primary:hover {
+    background-color: #ff0;
+    color: #000;
+}
+
+body.high-contrast .card,
+body.high-contrast .card-header,
+body.high-contrast .card-body {
+    background-color: #333;
+    color: #ff0; 
+}
+
+body.high-contrast .card-header {
+    background-color: #222;
+    color: #ff0; 
+}
+
+body.high-contrast .card .btn-primary {
+    background-color: #ff0;
+    color: #000;
+    border: 1px solid #ff0;
+}
+
+body.high-contrast .card .btn-primary:hover {
+    background-color: #000;
+    color: #ff0;
+    border: 1px solid #ff0;
+}
+
+/* botón de alto contraste */
+body.high-contrast #contrast-toggle {
+    background-color: #ff0;
+    color: #000;
+    border: 1px solid #000;
+}
+
+body.high-contrast #contrast-toggle:hover {
+    background-color: #000;
+    color: #ff0;
+    border: 1px solid #ff0;
+}
+
+

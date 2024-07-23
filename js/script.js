@@ -44,3 +44,22 @@ function validacion(form) {
     
     return true;
 }
+
+// Alto contraste
+document.addEventListener('DOMContentLoaded', function() {
+    const contrastToggle = document.getElementById('contrast-toggle');
+    let highContrastMode = false; // Variable para controlar el estado del alto contraste
+
+    contrastToggle.addEventListener('click', function() {
+        if (highContrastMode) {
+            document.body.classList.remove('high-contrast'); // Remover alto contraste
+            contrastToggle.innerHTML = '<i class="bi bi-toggle-on"></i> Alto Contraste'; // Actualizar el texto del botón
+            highContrastMode = false; // Cambiar el estado a modo normal
+        } else {
+            document.body.classList.add('high-contrast'); // Aplicar alto contraste
+            contrastToggle.innerHTML = '<i class="bi bi-toggle-off"></i> Normal'; // Actualizar el texto del botón
+            highContrastMode = true; // Cambiar el estado a modo alto contraste
+        }
+    });
+});
+
